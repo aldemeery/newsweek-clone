@@ -1,0 +1,89 @@
+:root {
+  --main-red: #f72210;
+  --primary-grey: #333;
+  --secondary-grey: #666;
+  --body-color: #f4f5f6;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+body {
+  background-color: var(--body-color);
+}
+
+/* ======= Header ======= */
+.header {
+  height: 50px;
+  background-color: var(--main-red);
+}
+
+/* ======= Nav ======= */
+.navbar {
+  display: none;
+}
+
+.left-aside {
+  background-color: var(--blue);
+  min-height: 120px;
+  order: 2;
+}
+
+.middle {
+  background-color: var(--green);
+  min-height: 250px;
+  order: 1;
+}
+
+.right-aside {
+  background-color: var(--pink);
+  min-height: 120px;
+  order: 3;
+}
+
+.section {
+  min-height: 120px;
+  background-color: var(--indigo);
+}
+
+.footer {
+  min-height: 60px;
+  background-color: var(--cyan);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .left-aside {
+    order: 1;
+  }
+
+  .middle {
+    order: 2;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* ======= Header ======= */
+  .header {
+    height: 95px;
+    padding: 20px 10px 15px;
+  }
+
+  /* ======= Nav ======= */
+  .navbar {
+    display: block;
+    height: 56px;
+    background-color: var(--secondary-grey);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1310px;
+  }
+}
