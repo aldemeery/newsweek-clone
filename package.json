@@ -1,0 +1,31 @@
+{
+    "name": "newsweek-clone",
+    "version": "1.0.0",
+    "description": "A clone of the Newsweek website.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aldemeery/newsweek-clone.git"
+    },
+    "keywords": [
+        "newsweek",
+        "clone",
+        "microverse",
+        "html",
+        "css",
+        "gradients"
+    ],
+    "author": "Osama Aldemeery <aldemeery@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aldemeery/newsweek-clone/issues"
+    },
+    "homepage": "https://github.com/aldemeery/newsweek-clone#readme",
+    "devDependencies": {
+        "stylelint": "^13.3.3",
+        "stylelint-config-recommended": "^3.0.0"
+    }
+}
