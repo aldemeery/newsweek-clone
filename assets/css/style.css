@@ -132,7 +132,7 @@ body {
   order: 2;
 }
 
-.left-aside .section-title {
+.section-title {
   color: var(--titles-grey);
   text-transform: uppercase;
   font-weight: bold;
@@ -178,9 +178,37 @@ body {
 }
 
 .middle {
-  background-color: var(--green);
+  border-top: 2px solid var(--body-color);
+  padding-top: 10px;
   min-height: 250px;
   order: 1;
+}
+
+.heroes .card-title a {
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--secondary-grey);
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.card-horizontal .card-body {
+  padding: 0 1.25rem;
+}
+
+.more-stories .card-title {
+  color: var(--black);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.more-stories .card-title a {
+  color: var(--black);
+  text-decoration-color: var(--main-red);
 }
 
 .right-aside {
@@ -211,6 +239,19 @@ body {
 
   .middle {
     order: 2;
+  }
+
+  .middle {
+    max-height: 2185px;
+    overflow: scroll;
+  }
+
+  .middle::-webkit-scrollbar {
+    display: none;
+  }
+
+  .middle {
+    -ms-overflow-style: none;
   }
 }
 
