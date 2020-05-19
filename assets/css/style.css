@@ -2,6 +2,7 @@
   --main-red: #f72210;
   --primary-grey: #333;
   --secondary-grey: #666;
+  --light-grey: #e7e7e7;
   --body-color: #f4f5f6;
   --main-font: "Roboto Condensed";
 }
@@ -63,7 +64,55 @@ body {
 
 /* ======= Nav ======= */
 .navbar {
+  padding: 0;
   display: none;
+  position: relative;
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-self: center;
+  min-width: 90%;
+  margin: 0;
+}
+
+.nav-item {
+  flex-grow: 1;
+  display: inline-block;
+  font-weight: bold;
+  color: var(--black);
+  text-align: center;
+}
+
+.nav-item a {
+  color: var(--black);
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: var(--main-red);
+}
+
+.nav-item:not(:last-child) {
+  border-right: 1px solid var(--light-grey);
+}
+
+.nav-item:last-child {
+  font-weight: lighter;
+}
+
+.triangle {
+  width: 100px;
+  height: 20px;
+  border-top: 20px solid var(--main-red);
+  border-left: 29px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .left-aside {
@@ -142,9 +191,9 @@ body {
 
   /* ======= Nav ======= */
   .navbar {
-    display: block;
+    display: flex;
     height: 56px;
-    background-color: var(--secondary-grey);
+    background-color: var(--white);
   }
 }
 
