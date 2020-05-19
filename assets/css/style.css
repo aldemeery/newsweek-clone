@@ -219,7 +219,45 @@ body {
 
 .section {
   min-height: 120px;
-  background-color: var(--indigo);
+  background-color: var(--white);
+}
+
+.section-heading {
+  margin-top: 35px;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+}
+
+.section-heading h5 {
+  font-weight: bold;
+}
+
+.mark {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  color: var(--white);
+  background-color: var(--main-red);
+}
+
+.card-category,
+.card-keyword {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.card-keyword {
+  background-color: var(--main-red);
+  color: var(--white);
+}
+
+.card-category {
+  color: var(--main-red);
 }
 
 .footer {
