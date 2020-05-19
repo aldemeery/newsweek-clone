@@ -3,18 +3,62 @@
   --primary-grey: #333;
   --secondary-grey: #666;
   --body-color: #f4f5f6;
+  --main-font: "Roboto Condensed";
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 body {
   background-color: var(--body-color);
+  font-family: var(--main-font), sans-serif;
 }
 
 /* ======= Header ======= */
 .header {
   height: 50px;
   background-color: var(--main-red);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  color: var(--white);
+  display: none;
+}
+
+.logo {
+  display: block;
+  max-width: 132px;
+  height: 20px;
+}
+
+.login-button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.subscribe-button {
+  background-color: var(--white);
+  border: none;
+  text-transform: uppercase;
+  color: var(--main-red);
+  padding: 3px;
+  margin: 0 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-menu {
+  color: #fb9a94;
+  font-size: 26px;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 /* ======= Nav ======= */
@@ -67,10 +111,33 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .date {
+    display: block;
+  }
+
   /* ======= Header ======= */
   .header {
     height: 95px;
     padding: 20px 10px 15px;
+  }
+
+  .logo {
+    max-width: 375px;
+    height: 90px;
+  }
+
+  .header-buttons,
+  .date {
+    align-self: flex-end;
+  }
+
+  .header-buttons button,
+  .date {
+    font-size: 18px;
+  }
+
+  .header-menu {
+    display: none !important;
   }
 
   /* ======= Nav ======= */
