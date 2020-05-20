@@ -16,3 +16,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Main section styles across all screens.
 - Magazine styles across all screens.
 - Editor's Pick styles across all screens.
+- Subscribe section styles across all screens.

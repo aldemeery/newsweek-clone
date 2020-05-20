@@ -15,8 +15,20 @@ body {
   font-family: var(--main-font), sans-serif;
 }
 
+.hr {
+  flex: 1 1 100%;
+}
+
+.container-fluid {
+  background-color: var(--white);
+}
+
 .unbordered {
   border: none;
+  border-radius: unset;
+}
+
+.no-radius {
   border-radius: unset;
 }
 
@@ -258,6 +270,64 @@ body {
 
 .card-category {
   color: var(--main-red);
+}
+
+.category-section-title {
+  color: var(--main-red);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.more-news .card-title {
+  color: var(--black);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.more-news .card-title a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.more-news .card-title a:hover {
+  color: var(--main-red);
+}
+
+.subscribe {
+  padding: 30px;
+  background-color: #f4f5f6;
+}
+
+.sign-up .card-title,
+.subscribe .card-title {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.subscribe-cta {
+  border-radius: unset;
+  background-color: var(--main-red);
+  border: none;
+  padding: 5px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subscribe-cta:hover,
+.subscribe-cta:active,
+.subscribe-cta:visited {
+  background-color: var(--main-red) !important;
+}
+
+.sign-up {
+  max-height: 290px;
+  overflow: hidden;
+}
+
+.sign-up .card-body {
+  padding: 1.25em;
 }
 
 .footer {
