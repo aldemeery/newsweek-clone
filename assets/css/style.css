@@ -9,6 +9,7 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
+
 /* No media query for `xs` since this is the default in Bootstrap */
 body {
   background-color: var(--body-color);
@@ -111,6 +112,13 @@ body {
   text-decoration: none;
 }
 
+.links a,
+.editions a {
+  text-decoration: none;
+  color: var(--secondary-grey);
+  margin: 0 5px;
+}
+
 .nav-item a:hover {
   color: var(--main-red);
 }
@@ -181,7 +189,7 @@ body {
   opacity: 0.85;
   position: absolute;
   bottom: 0;
-  left: 0px;
+  left: 0;
   padding: 5px 10px;
   margin: 0;
   color: var(--main-red);
@@ -261,9 +269,23 @@ body {
   text-transform: uppercase;
 }
 
+.mark {
+  text-align: center;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  color: var(--white);
+  background-color: var(--main-red);
+}
+
 .right-aside .mark {
   height: 40px;
   width: 40px;
+}
+
+.sign-up {
+  max-height: 239px;
+  overflow: hidden;
 }
 
 .right-aside .sign-up {
@@ -291,15 +313,6 @@ body {
   font-weight: bold;
 }
 
-.mark {
-  text-align: center;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  color: var(--white);
-  background-color: var(--main-red);
-}
-
 .card-category,
 .card-keyword {
   display: inline-block;
@@ -324,6 +337,11 @@ body {
   color: var(--main-red);
   font-weight: bold;
   font-size: 1.4em;
+}
+
+.links a:hover,
+.editions a:hover {
+  color: var(--balck);
 }
 
 .more-news .card-title {
@@ -367,11 +385,6 @@ body {
 .subscribe-cta:active,
 .subscribe-cta:visited {
   background-color: var(--main-red) !important;
-}
-
-.sign-up {
-  max-height: 239px;
-  overflow: hidden;
 }
 
 .sign-up .card-body {
@@ -444,22 +457,6 @@ body {
   margin-bottom: 12px;
 }
 
-.links a,
-.editions a {
-  text-decoration: none;
-  color: var(--secondary-grey);
-  margin: 0 5px;
-}
-
-.links a:hover,
-.editions a:hover {
-  color: var(--balck);
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .left-aside {
@@ -468,19 +465,13 @@ body {
 
   .middle {
     order: 2;
-  }
-
-  .middle {
     max-height: 2185px;
     overflow: scroll;
+    -ms-overflow-style: none;
   }
 
   .middle::-webkit-scrollbar {
     display: none;
-  }
-
-  .middle {
-    -ms-overflow-style: none;
   }
 }
 
