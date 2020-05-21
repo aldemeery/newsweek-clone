@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Editor's Pick styles across all screens.
 - Subscribe section styles across all screens.
 - Footer styles across all screens.
+- Right aside styles across all screens.

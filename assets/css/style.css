@@ -224,9 +224,56 @@ body {
 }
 
 .right-aside {
-  background-color: var(--pink);
+  border-top: 2px solid var(--body-color);
+  padding: 10px 15px 0;
   min-height: 120px;
+  flex-direction: column;
   order: 3;
+}
+
+.debate {
+  padding: 10px 0;
+  border-top: 4px solid var(--main-red);
+  border-bottom: 4px solid #1c87fb;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.debate-line {
+  border-top: 4px double rgba(0, 0, 0, 0.1);
+}
+
+.vs {
+  top: 42.5%;
+  left: 42.5%;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  background-color: #000;
+  color: var(--light-grey);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.right-aside .mark {
+  height: 40px;
+  width: 40px;
+}
+
+.right-aside .sign-up {
+  background-color: var(--light-grey);
+}
+
+.by-author {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: var(--secondary-grey);
 }
 
 .section {
@@ -245,6 +292,7 @@ body {
 }
 
 .mark {
+  text-align: center;
   display: inline-block;
   height: 30px;
   width: 30px;
