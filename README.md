@@ -2,13 +2,13 @@
 
 > A clone for the newsweek website.
 
-## Screenshot
-
-![screenshot](./assets/images/screenshot.png)
-
 ## Live Preview
 
 Click [here](https://raw.githack.com/aldemeery/newsweek-clone/develop/index.html) for a live preview.
+
+## Screenshot
+
+![screenshot](./assets/images/screenshot.png)
 
 ## Authors
 
